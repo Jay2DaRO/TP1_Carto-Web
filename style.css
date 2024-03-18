@@ -1,0 +1,321 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Titres */
+
+.titresPale {
+  color: white;
+  text-align: center;  
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+#titreFonce {
+  color: rgb(6, 52, 97);
+  text-align: center;  
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+
+/* En-tête */
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+  header > h1 {
+    position: fixed;
+    top: 14px;
+    color: #bbdbf5;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin-left: 150px; /* À ajuster selon écran */
+  }
+
+  header > img {
+    position: fixed;
+    height: 55px;
+    margin: 6px;
+    border-radius: 12px; 
+  }
+
+
+/* Navigation */
+
+.navigation {
+  display: flex;    
+  justify-content: right;
+  padding-right: 30px;   
+  background-color: rgb(6, 52, 97);
+}
+  
+  .navigation > a {
+    background-color: #bbdbf5;
+    color: rgb(6, 52, 97);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 135px;
+  }
+
+  .navigation a:hover {
+    background-color: rgb(6, 52, 97);
+    color: #bbdbf5;
+  }
+
+
+/* Accueil */
+
+#accueil {
+  padding-top: 15px;
+  padding-left: 20px;
+  height:600px;
+  background-color: #bbdbf5;
+}  
+
+.imageAccueil {
+  text-align: center;
+}
+
+.imageAccueil > img {
+  height: 500px;
+  padding-top: 35px;
+}
+
+
+/* Les poissons */
+
+#poissons {
+  border-top-color: rgb(6, 52, 97);
+  border-top-style: solid;
+  border-top-width: 3px;
+  padding-top: 15px;
+  padding-left: 20px;
+  height: 700px;
+  background-color: rgb(66, 121, 177);    
+}
+
+.list .list-item {
+  display: flex;
+  flex-flow: row;
+}
+
+.list .list-item_image {
+  flex-shrink: 0;
+  height: 175px;
+}
+
+.list .list-item_content {
+  flex-grow: 1;
+  padding: 0 25px;
+}
+
+.list {
+  list-style: none;  
+}
+
+.list .list-item_image img{
+  border-radius: 10%;
+  width: 150px;  
+} 
+ 
+.list .list-item_content h4 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  color: #bbdbf5;
+}
+
+.list .list-item_content p {
+  margin-top: 5px;
+  max-width: 350px;
+  height: 175px;
+  text-align: justify;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-left: 7%;
+  margin-right: 7%;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.column1 {
+  height: 100px;
+  margin: 30px;
+}
+
+.column2 {
+  height: 100px;
+  margin: 30px;
+}
+
+
+/* Carte interactive */
+
+#carte {
+  border-top-color: rgb(6, 52, 97);
+  border-top-style: solid;
+  border-top-width: 3px;
+  padding-top: 45px;
+  padding-left: 20px;
+  height: 750px;
+  background-color: #bbdbf5;
+}
+
+#carte > h1 {
+  color: rgb(6, 52, 97);
+  text-align: center;  
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+#map {
+  width: 70%;
+  height: 600px;
+  left: 15%;
+  top: 10px; 
+  z-index: 0;   
+}
+
+.legend {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  line-height: 30px;
+  color: #292828;
+}
+
+.legend span {
+  position: relative;
+}
+
+.legend i {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.legend i.icon {
+  background-size: 30px; 
+}
+
+
+/* Commerces */
+
+#sitesInt {
+  border-top-color: rgb(6, 52, 97);
+  border-top-style: solid;
+  border-top-width: 3px;
+  padding-top: 15px;
+  padding-left: 20px;
+  height: 150px;
+  background-color: rgb(66, 121, 177);
+}
+
+.listeSites {
+  display: flex;
+  justify-content: center;
+}
+
+  .listeSites > a {
+    color: #bbdbf5;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+  }
+
+
+/* Pied-de-page */
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(6, 52, 97)
+}
+
+  footer > p {
+    color: #bbdbf5;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 6px;
+  }
+
+
+
+/***********      Media Queries      ***********/
+
+/* Fonctionne bien jusqu'à 800px */
+@media (max-width: 1400px) {
+  
+/* En-tête */
+
+header > h1 {
+  z-index: -1;
+}
+
+
+/* Les poissons */
+
+#poissons {
+  height: 725px;
+}
+
+.list .list-item_content {
+  padding: 0 15px;
+}
+
+.list .list-item_image img{
+  width: 125px;  
+} 
+ 
+.list .list-item_content h4 {
+  font-size: 16px;
+}
+
+.list .list-item_content p {
+  font-size: 13px;
+}
+
+.column1 {
+  margin: 15px;
+}
+
+.column2 {
+  margin: 15px;
+}
+}

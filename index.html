@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="motoneigeScript.js"></script>
+    <script src="script.js"></script>    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script> 
+    <title>Pêche blanche sur le Fjord-du-Saguenay</title>
+</head>
+
+<body>
+
+    <!-- En-tête et navigation -->
+
+    <header>
+        <img src="/Images/L.CégepLimoilou_2cHor.jpg" alt=""> 
+        <h1><span style="color: white;">Pêche blanche</span> sur le Fjord du Saguenay</h1>
+        <div class="navigation">                                  
+            <a href="#">Accueil</a>
+            <a href="#poissons">Les poissons</a>
+            <a href="#map">Carte interactive</a>
+            <a href="#sitesInt">Commerces</a>
+        </div>
+    </header>
+
+
+    <!-- Section Accueil -->
+
+    <div id="accueil">
+        <h1 id="titreFonce">Une activité pour les petits et les grands</h1>
+        <div class="imageAccueil">
+            <img src="/Images/main.jpg" alt="Image">
+        </div>
+    </div>
+
+
+    <!-- Section Les poissons -->
+
+    <div id="poissons">        
+        <h1 class="titresPale">Les espèces de poissons les plus pêchées</h1>
+        <div class='row'>
+          <div class='column'>
+            <div class='column1'>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-item_image">
+                            <img src="/Images/éperlan.jpg" alt="Image">
+                        </div>
+                        <div class="list-item_content">
+                            <h4>Éperlan arc-en-ciel</h4>
+                            <p><span style="font-style: italic;">Osmerus mordax</span>, l'Éperlan arc-en-ciel ou Éperlan d'Amérique est une espèce
+                             de poissons anadromes, vivant en eaux salées, saumâtres ou douces et migrant en eaux douces pour se reproduire.</p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item_image">
+                            <img src="/Images/sebaste.jpg" alt="Image">
+                        </div>
+                        <div class="list-item_content">
+                            <h4>Sébaste atlantique</h4>
+                            <p>Le sébaste atlantique <span style="font-style: italic;">(Sebastes mentella)</span> est un poisson de fond à rayons
+                             épineux se retrouvant dans l'Atlantique Nord. Il possède une peau orange à rouge vif, un corps court, de gros yeux et
+                             une mâchoire inférieure protubérante.</p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item_image">
+                            <img src="/Images/turbo.jpg" alt="Image">
+                        </div>
+                        <div class="list-item_content">
+                            <h4>Flétan du Groënland (Turbot)</h4>
+                            <p>Poisson plat vivant dans les eaux froides de l'Atlantique Nord, à la face supérieure de couleur brune très foncée,
+                             ayant sur le corps une ligne latérale plutôt droite et dont les yeux sont très écartés l'un de l'autre.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='column2'>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-item_image">
+                            <img src="/Images/morue-arctique.jpg" alt="Image">
+                        </div>
+                        <div class="list-item_content">
+                            <h4>Morue polaire</h4>
+                            <p>La morue polaire est le poisson qui a été observé le plus au nord. Fréquentant les eaux arctiques autour du pôle, elle
+                             semble préférer des eaux très froides (de 0 à 4 °C), quoiqu'elle se retrouve à l'occasion dans des eaux plus chaudes.</p>
+                        </div>
+                    </li>  
+                    <li class="list-item">
+                        <div class="list-item_image">
+                            <img src="/Images/perchaude.jpg" alt="Image">
+                        </div>
+                        <div class="list-item_content">
+                            <h4>Perchaude</h4>
+                            <p>La perchaude est une espèce de poissons dulcicoles appartenant à la famille des percidés. Ubiquitaire en Amérique
+                             du Nord, elle s'adapte bien à toutes sortes d'habitats : grands lacs, petits étangs ou rivières tranquilles.</p>
+                        </div>
+                    </li>  
+                    <li class="list-item">
+                        <div class="list-item_image">
+                            <img src="/Images/dore.jpeg" alt="Image">
+                        </div>
+                        <div class="list-item_content">
+                            <h4>Doré</h4>
+                            <p>Très prisée pour la qualité et le goût de sa chair, le doré jaune est l'un des poissons les plus pêchés en Amérique du Nord. On le
+                             retrouve dans de nombreux lacs de plusieurs régions du Québec, ainsi que le long du segment d'eau douce du fleuve Saint-Laurent.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Section Carte interactive -->
+
+    <div id="carte">
+        <h1>Commerces de pêche blanche sur le Fjord du Saguenay, secteur La Baie</h1>
+        <div id="map">
+            <script src="motoneigeScript.js"></script>
+            <script src="script.js"></script>                       
+        </div>
+    </div>
+
+
+    <!-- Section Commerces -->
+
+    <div id="sitesInt">
+        <h1 class="titresPale">Sites internet des commerces de location de cabanes de pêche</h1> 
+        <div class="listeSites">
+            <a href="https://www.pecheblanchedufjord.com/">Pêche blanche du Fjord</a>
+            <a href="https://glacesdufjord.com/">Glaces du Fjord</a>
+            <a href="https://www.pecheaventuressaguenay.com/">Pêche Aventures Saguenay</a>
+        </div>        
+    </div>
+
+
+    <!-- Pied-de-page -->
+
+    <footer>
+        <p>Jérôme Rioux</p>
+    </footer>
+
+</body>
+
+</html>
